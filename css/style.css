@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clear{
+    clear: both;
+}
+header{
+    background-color: #d6d6d6;
+    padding: 10px 2% 30px 2%;
+}
+.container-nav{
+    max-width: 1280px;
+    padding: 0 auto;
+}
+.logo-1{
+    float: left;
+    width: 160px;
+    height: 80px;
+    background-image: url(../imagens/logo1.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo-2{
+    float: right;
+    width: 160px;
+    height: 70px;
+    background-image: url(../imagens/logo2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section .cover-form{
+    width: 100%;
+    padding: 0 2%;
+}
+.bg{
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/Igreja_Matriz5.png);
+}
+.form-container{
+    float: right;
+    width: 400px;
+    margin-right: 40px;
+    height: 110%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 2px 2px 1px 1px rgb(150, 149, 149);
+    top: -5%;
+    background-color: rgba(241, 243, 245, 0.8);
+}
+.form-container h2{
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(232, 233, 236); 
+}
+.form-container form{
+    margin-top: 8px;
+    padding: 20px;
+}
+.form-container form p{
+    font-size: 15px;
+    color: #060606;
+}
+.form-waper:not(:first-child){
+    margin-top: 5px;
+}
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+.form-container form input[type=email]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding: 10px;
+}
+.form-container form input[type=submit]{
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+   
+}
+section.informacao{
+    padding: 50px 0;
+    width: 100%;
+    top: -50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+   
+    
+}
+section.informacao .container{
+    background-color: #d6d6d6;
+    padding: 50px 0;
+    top: -50px;
+    position: relative;
+    
+}
+section.informacao h2{
+    display: inline-block;
+    color: black;
+    width: 96%;
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+.flecha{
+    position: relative;
+    top: -70px;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    margin-left: -20px;
+    background-image:url(../imagens/arrow.png);
+    background-size: 100% 100%;
+    
+}
+section.mosaico{
+    position: relative;
+    top: -200px;
+    width: 100%;
+}
+.flex-mosaico{
+    display: flex;
+    height: 100%;
+    min-height: 400px;
+}
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 60%;
+}
+.item-2-mosaico{
+    background-color: #c8e3f5;
+    width: 40%;
+    padding: 60px 40px;
+}
+
+footer{
+    position: relative;
+    top: -200px;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+footer img{
+    
+    width: 15%;
+}
+header nav{
+    float: left;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav li{
+    float: left;
+    padding-left: 20px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 900px) {
+    .bg{
+       text-align: center;
+    }
+    .form-container{
+        width: 96%;
+        max-width: 400px;
+        float: none;
+        position: static;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    .informacao{
+        padding: 50px 0;
+        margin-top: 50px;
+        display: inline-block;
+        
+    }
+   .container-nav{
+       display: inline-block;
+       text-align: center;
+   }
+}
+@media screen and (max-width: 510px) {
+    header{
+        text-align: center;
+    }
+    .logo-1, .logo-2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+    
+}
